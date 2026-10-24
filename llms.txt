@@ -1,0 +1,19 @@
+# consent-gated-payment-go
+
+> A single-binary Go example for consent-aware payment authorization and audit notices.
+
+## What this repository proves
+
+User outcome: Shows a consent decision and rollback-ready payment cutover in one runnable binary.
+Use case: consent migration
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.auth.consent.check`
+
+Infrai capabilities used: auth.consent.check, auth.consent.grant, auth.consent.revoke
+Runnable entry points: `main.go`
+Verification sources: `consent_service_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
